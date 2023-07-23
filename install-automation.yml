@@ -1,8 +1,7 @@
 ---
-
-  - name: Basic playbook
-    hosts: localhost
-      tasks:
-      - name: Print a message
-        debug:
-          msg:"hello world!"
+- name: Print my message clear
+  hosts: localhost
+  tasks:
+    - name: Print
+      ansible.builtin.debug:
+        msg: "Hello World!"
