@@ -3,7 +3,7 @@
   hosts: localhost
   tasks:
     - name: Install ZSH
-      ansible.builtin.command: apt install zsh
+      ansible.builtin.command: apt -y install zsh
       become: true
       changed_when: false
 
